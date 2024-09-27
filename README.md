@@ -86,4 +86,4 @@ Here is a short detail on each part of the trace format:
 - EndTime: The exact time in nanosecond when the request has been served and out of the server.
 - Request-X: Contains information about the request. This can change depending on the type of application we are working with. The different components of requests are separated by ';'.
 
-For more details about the implementations see [TraceUplitter Repository](https://github.com/smsajal/TraceUpscaler) and [TraceSplitter Repository](https://github.com/smsajal/TraceSplitter).
+For more details about the implementations see [TraceUpscaler Repository](https://github.com/smsajal/TraceUpscaler) and [TraceSplitter Repository](https://github.com/smsajal/TraceSplitter).
