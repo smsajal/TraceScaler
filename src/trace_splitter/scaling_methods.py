@@ -261,9 +261,9 @@ def leastWorkLeftAll ( inputFilename, factor ) :
 
 
 def avgRateScaling ( inputFilename, factor,bucketSize ) :
-	bucketSize = 20 * 1000000000  # in nanoseconds, same unit as timestamp in file
+	bucketSize = int(bucketSize * 1000000000)  # in nanoseconds, same unit as timestamp in file
 
-	scale = 1 / factor  # if factor < 0  #TODO: for upscaling
+	scale = 1 / factor  
 	outputFilename = str.split ( inputFilename, "." ) [ 0 ] + "modelSimple.txt"
 
 	reader = scaling.TraceReader ( inputFilename )
@@ -272,7 +272,7 @@ def avgRateScaling ( inputFilename, factor,bucketSize ) :
 	nextReq = reader.readNextReq ( )
 
 	'''Update timestamp and bucket initially'''
-	timeStamp1 = float ( nextReq.timestamp )
+	timeStamp1 = int ( nextReq.timestamp )
 	timeStamp2 = timeStamp1 + bucketSize
 	
 
