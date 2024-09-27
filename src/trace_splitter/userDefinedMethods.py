@@ -1,5 +1,4 @@
 # Converts request size based on request parameters into some size based on server speed. Formula given by user
-# todo: what about login vs post??
 def sizeConversion(size, reqType):
     if reqType == "LOG_IN":
         return 0.001
