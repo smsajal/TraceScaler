@@ -1,0 +1,12 @@
+test.sh
+.vscode
+files/source_trace1lwl.txt
+files/source_trace1randrr.txt
+files/source_trace1rr.txt
+source_trace2lwl.txt
+source_trace2randrr.txt
+source_trace2rr.txt
+source_tracemodelSimple.txt
+source_tracerand.txt
+source_tracetspan.txt
+upscaledTrace.txt
