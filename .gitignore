@@ -14,3 +14,5 @@ src/files/source_tracemodelSimple.txt
 src/files/source_tracerand.txt
 src/files/source_tracetspan.txt
 src/files/upscaledTrace.txt
+src/files/figs
+src/files/figs/*
