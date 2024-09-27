@@ -31,7 +31,7 @@ def main():
                             metavar='Required: path of the trace to be scaled')
                             
     my_parser.add_argument("--scalingFactor", action='store',
-                        type=scalingFactorLimit, default=1, metavar=f'scaling factor for TraceScaler; For downscaling: 0 < scalingFactor <= 1; For upscaling: 1 < scalingFactor < {infinite}, default is 1')
+                        type=scalingFactorLimit, default=1, metavar=f'scaling factor for TraceScaler; For downscaling: 0 < scalingFactor < 1; For upscaling: 1 < scalingFactor < {infinite}, default is 1')
 
     
     my_parser.add_argument("--downscalingScheme",
